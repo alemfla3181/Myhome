@@ -3,5 +3,9 @@
     height: 400px;
     background-color: pink;
 
-    
+    border-bottom: 10px solid blue;
+    border-radius: 50px;
+    background-image: url(img/sample.jpg);
+    background-size: cover;
+    width: 100%;
 }
