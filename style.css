@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'GilbeotRainbow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/GilbeotRainbow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
+    font-family:  'GilbeotRainbow', serif;
     background-color: #EFE7E3;
 }
 
@@ -6,4 +14,38 @@ body{
     margin: 30px 150px;
     display: flex;
     flex-direction: column;
+}
+
+.navigator{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li{
+    display: inline;
+    align-self: center;
+    margin: 0;
+    margin-left: 15px;
+}
+
+ul{
+    margin: 0;
+}
+
+.site-name{
+    font-size: 30px;
+    margin: 0;
+    color: #c0a192;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: grey;
+    transition: 0.3s;
 }
