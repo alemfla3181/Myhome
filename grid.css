@@ -1,0 +1,19 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sidebar-a{
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.main{
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.sidebar-b{
+    border: 1px solid black;
+    height: 100vh;
+}
