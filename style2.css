@@ -1,14 +1,24 @@
 .container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     background-color: skyblue;
+    height: 200px;
 
-    justify-content: space-around;
+    justify-content: center;
+    align-content: flex-end;
 }
 
 .item{
-    width: 200px;
+    width: 100%;
     height: 50px;
     background-color: pink;
     border: 1px solid black;
+}
+
+.item5{
+    order: -3;
+}
+
+.item2{
+    order: -2;
 }
