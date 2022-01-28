@@ -1,0 +1,3 @@
+body { margin: 0px; font-family: Consolas, monospace; }
+      .a { height: 100vh; background-color: #eeeeee; }
+      .b { display: inline-block; width: 600px; height: 600px; margin: 0px 40px; background-color: #000000; }
