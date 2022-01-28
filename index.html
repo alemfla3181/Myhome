@@ -7,6 +7,14 @@
     <title>My home</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        $( document ).ready( function() {
+            AOS.init();
+        } );
+    </script>
 </head>
 <body>
 
@@ -29,12 +37,13 @@
                 Based in Seoul, South Korea, but willing to travel around the world to find any exciting and field-changing works.<br>
                 Also, always feel free to call for fun side projects: Let's make our lives even better and better!
             </p>
+            
         </div>
 
         <h5 class="recent_menu">RECENT WORKS</h5>
 
-        <div>
-            <span data-aos="fade-down">SAMPLE</span>
+        <div class="aos" data-aos="flip-down" data-aos-delay="300">
+            <img src="img/sample.jpg">
         </div>
 
         <footer class="footer">
