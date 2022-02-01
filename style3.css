@@ -9,7 +9,7 @@ body {
     font-size: 10px;
 }
 
-#fullpage {
+#page {
     position: relative;
     top: 0px;
     width: 100%;
@@ -35,7 +35,7 @@ body {
 .full5 {
     background: purple;
 }
-#fullpage span {
+#page span {
     display: block;
     position: absolute;
     top: 50%;
@@ -76,14 +76,13 @@ li {
 }
 
 #imgWrap {
-    top: 100px;
-    left: 100px;
     width: 500px;
     height: 500px;
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000;
     cursor: pointer;
+    transform: translate(55%, 40%);
 }
 .face {
     top: 0;
@@ -98,25 +97,25 @@ li {
 }
 .front {
     position: relative;
-    background: black;
+    background: blue;
     z-index: 2;
     opacity: 1;
-    transform: rotateY(0deg);
+    transform:rotateY(0deg);
 }
 .back {
     position: absolute;
     background: green;
     z-index: 1;
     opacity: 0;
-    transform: rotateY(180deg);
+    transform:rotateY(180deg);
 }
 #imgWrap:hover > .front {
     z-index: 1;
     opacity: 0;
-    transform: rotateY(180deg);
+    transform:rotateY(180deg);
 }
 #imgWrap:hover > .back {
     z-index: 2;
     opacity: 1;
-    transform: rotateY(0);
+    transform:rotateY(0);
 }
