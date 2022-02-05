@@ -13,7 +13,7 @@ body {
     overflow: hidden;
     font-family: 'GilbeotRainbow', serif;
     background-color: #EFE7E3;
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .navigator {
@@ -31,7 +31,7 @@ body {
 .site {
     font-size: 30px;
     margin: 0;
-    color: #c0a192;
+    color: #f1f1f1;
 }
 
 
@@ -46,34 +46,31 @@ body {
 }
 
 .full1 {
-    background: red;
+    background: rgba(197, 210, 247, 0.521);
 }
 
 .full2 {
-    background: yellow;
+    background: rgb(214, 165, 247);
+}
+
+.full2 span {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 40%;
+    font-size: 50px;
 }
 
 .full3 {
-    background: green;
+    background: rgb(196, 247, 196);
 }
 
 .full4 {
-    background: blue;
+    background: rgb(173, 204, 233);
 }
 
 .full5 {
-    background: purple;
-}
-
-#page span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 4em;
-    font-weight: bold;
+    background: rgb(104, 101, 100);
 }
 
 .quick ul,
