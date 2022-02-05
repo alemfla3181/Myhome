@@ -34,6 +34,7 @@ body {
     color: #c0a192;
 }
 
+
 #page {
     position: relative;
     height: 100%;
@@ -41,7 +42,7 @@ body {
 
 .fullsection {
     height: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .full1 {
@@ -75,9 +76,8 @@ body {
     font-weight: bold;
 }
 
-ul,
+.quick ul,
 li {
-    display: inline;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -122,7 +122,8 @@ li {
     width: 100%;
     height: 100%;
     color: white;
-    line-height: 200px;
+    line-height: 300px;
+    font-size: 50px;
     text-align: center;
     backface-visibility: hidden;
     transition: all 1s;
@@ -155,7 +156,7 @@ li {
     transform: rotateY(0);
 }
 
-img{
+img {
     display: block;
     position: absolute;
     top: 30%;

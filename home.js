@@ -2,6 +2,7 @@ $(document).ready(function () {
     fullset();
     quickClick();
 });
+
 function fullset() {
     var pageindex = $("#page > .fullsection").size(); //page 안에 섹션이(.fullsection) 몇개인지 확인하기
     for (var i = 1; i <= pageindex; i++) {
@@ -24,7 +25,9 @@ function fullset() {
             if (page.index() > 0) {
                 //첫번째 페이지가 아닐때 (index는 0부터 시작임)
                 page = page.index() - 1;
-                $("#page").animate({ top: -pagelength + "px" }, 500, "swing");
+                $("#page").animate({
+                    top: -pagelength + "px"
+                }, 500, "swing");
             }
         } else {
             // 마우스 휠을 아래로
@@ -44,7 +47,9 @@ function fullset() {
                     //ex) 현재 1번페이지에서 2번페이지로 내려갈때는 1번페이지 길이 + 2번페이지 길이가 더해짐
                     pagelength += $(".full" + i).height();
                 }
-                $("#page").animate({ top: -pagelength + "px" }, 500, "swing");
+                $("#page").animate({
+                    top: -pagelength + "px"
+                }, 500, "swing");
             }
         }
     });
@@ -59,7 +64,9 @@ function fullset() {
             pagelength += $(".full" + i).height();
         }
 
-        $("#page").animate({ top: -pagelength + "px" }, 0);
+        $("#page").animate({
+            top: -pagelength + "px"
+        }, 0);
     });
 }
 // 사이드 퀵버튼 클릭 이동
@@ -73,7 +80,9 @@ function quickClick() {
         if ($("body").find("#page:animated").length >= 1) return false;
         $(this).addClass("on").siblings("li").removeClass("on");
 
-        $("#page").animate({ top: -length + "px" }, 800, "swing");
+        $("#page").animate({
+            top: -length + "px"
+        }, 500, "swing");
         return false;
     });
 }
