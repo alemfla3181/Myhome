@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'GilbeotRainbow';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/GilbeotRainbow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* overflow: hidden; */
+    font-family: 'GilbeotRainbow', serif;
+    background-color: #EFE7E3;
+    font-size: 10px;
+}
+
+#page {
+    position: relative;
+    height: 100%;
+}
+
+.fullsection {
+    height: 100%;
+    position: relative; 
+}
+
+.full1 {
+    background: black;
+}
+
+.full2 {
+    background: yellow;
+}
+
+.full3 {
+    background: green;
+}
+
+.full4 {
+    background: blue;
+}
+
+.full5 {
+    background: purple;
+}
+
+#page span {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+img{
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 50%;
+}
