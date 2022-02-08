@@ -6,7 +6,7 @@ $(document).ready(function () {
 function fullPage() {
     const pageNumber = $("#page > .fullsection").size();
     
-    for (let i = 1; i <= pageNumber; i++){
+    for (let i = 0; i < pageNumber; i++){
         $("#page > .quick > ul").append("<li></li>");
     }
     
@@ -66,7 +66,7 @@ function Click() {
     $(".quick li").click(function () {
         const index = $(this).index() + 1;
         let length = 0;
-        for (var i = 1; i < index; i++) {
+        for (let i = 1; i < index; i++) {
             length += $(".full" + i).height();
         }
         if ($("body").find("#page:animated").length >= 1) return false;
