@@ -15,8 +15,8 @@ function fullPage() {
     $(window).on("mousewheel", function (event) {
         let page = $(".quick ul li.on");
 
-        if ($("body").find("#page:animated").length >= 1) return false;
-
+        if ($("body").find("#page:animated").length > 0) return false;
+        
         if (event.originalEvent.deltaY < 0) {
             const before = page.index();
             if (page.index() >= 0) page.prev().addClass("on").siblings(".on").removeClass("on");
