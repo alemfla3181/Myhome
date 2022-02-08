@@ -10,11 +10,25 @@ body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    /* overflow: hidden; */
+    overflow: hidden;
     font-family: 'GilbeotRainbow', serif;
     background-color: #EFE7E3;
-    font-size: 10px;
+    font-size: 14px;
 }
+
+.navigator {
+    position: fixed;
+    top: 0;
+    padding: 5rem;
+    z-index: 2;
+}
+
+.site {
+    font-size: 30px;
+    margin: 0;
+    color: #f1f1f1;
+}
+
 
 #page {
     position: relative;
@@ -23,44 +37,180 @@ body {
 
 .fullsection {
     height: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .full1 {
-    background: black;
+    background: rgba(197, 210, 247, 0.521);
+}
+
+.full1 span {
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 10%;
+    font-size: 50px;
 }
 
 .full2 {
-    background: yellow;
+    background: rgb(214, 165, 247);
+}
+
+.full2 span {
+    position: absolute;
+    display: block;
+    top: 25%;
+    left: 10%;
+    font-size: 50px;
 }
 
 .full3 {
-    background: green;
+    background: rgb(196, 247, 196);
+}
+
+.full3 span {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 40%;
+    font-size: 50px;
+}
+
+img {
+    position: relative;
+    display: flexbox;
+    top: 25%;
+    left: 15%;
+    width: 30%;
+    margin: 30px;
+}
+
+img:hover {
+    box-shadow: 0px 0px 30px #000000;
+    transform: scale(1.2);
+    transition: 0.2s;
 }
 
 .full4 {
-    background: blue;
+    background: rgb(173, 204, 233);
+}
+
+.full4 span {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 10%;
+    font-size: 50px;
 }
 
 .full5 {
-    background: purple;
+    background: rgb(104, 101, 100);
 }
 
-#page span {
-    display: block;
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-size: 4em;
-    font-weight: bold;
+.quick ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-img{
+.quick {
+    position: fixed;
+    right: 20px;
+    top: 44%;
+    z-index: 100000;
+}
+
+.quick li {
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+.quick .on {
+    background: #fff;
+}
+
+#imgWrap {
+    width: 50%;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 2000;
+    cursor: pointer;
+}
+
+.face {
     display: block;
     position: absolute;
     top: 30%;
-    left: 25%;
-    width: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    color: white;
+    line-height: 300px;
+    font-size: 50px;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: all 1.2s;
+}
+
+.front {
+    position: relative;
+    background: black;
+    z-index: 2;
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+
+.back {
+    background: wheat;
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+#imgWrap:hover>.front {
+    z-index: 1;
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+#imgWrap:hover>.back {
+    z-index: 2;
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+
+    .navigator {
+        padding: 3rem;
+    }
+
+    .full1 span {
+        top: 25%;
+        left: 10%;
+        font-size: 36px;
+    }
+
+    img {
+        margin: 20px;
+    }
+
+    .full3 span {
+        font-size: 40px;
+    }
+
+    #imgWrap {
+        top: 100px;
+        left: -10%;
+        width: 60%;
+        height: 350px;
+    }
 }
