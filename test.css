@@ -199,12 +199,20 @@ li {
         font-size: 36px;
     }
 
+    .full2 span {
+        font-size: 40px;
+    }
+
     .full3 span {
         font-size: 40px;
     }
 
     img {
         margin: 20px;
+    }
+
+    .full4 span {
+        font-size: 40px;
     }
 
     #imgWrap {

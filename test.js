@@ -17,6 +17,7 @@ function fullPage() {
 
         if ($("body").find("#page:animated").length > 0) return false;
 
+        // 아래로 휠
         if (event.originalEvent.deltaY > 0) {
             const nextPage = parseInt(page.index() + 1);
             const lastPage = parseInt($(".quick ul li").size());
@@ -33,11 +34,13 @@ function fullPage() {
                     top: -pageLength + "px"
                 }, 500, "swing");
             }
+
+        // 위로 휠
         } else {
-            const before = page.index();
+            const backPage = page.index();
             if (page.index() >= 0) page.prev().addClass("on").siblings(".on").removeClass("on");
             let pageLength = 0;
-            for (let i = 1; i < before; i++) {
+            for (let i = 1; i < backPage; i++) {
                 pageLength += $(".full" + i).height();
             }
 
