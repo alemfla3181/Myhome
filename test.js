@@ -24,6 +24,7 @@ function fullPage() {
             for (let i = 1; i < before; i++) {
                 pageLength += $(".full" + i).height();
             }
+
             if (page.index() > 0) {
                 page = page.index() - 1;
                 $("#page").animate({
