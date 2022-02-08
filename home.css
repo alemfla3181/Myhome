@@ -59,9 +59,13 @@ body {
 .full2 span {
     position: absolute;
     display: block;
-    top: 20%;
-    left: 40%;
+    top: 25%;
+    left: 10%;
     font-size: 50px;
+}
+
+.full3 {
+    background: rgb(196, 247, 196);
 }
 
 img {
@@ -79,16 +83,11 @@ img:hover {
     transition: 0.2s;
 }
 
-
-.full3 {
-    background: rgb(196, 247, 196);
-}
-
 .full3 span {
     position: absolute;
     display: block;
     top: 20%;
-    left: 10%;
+    left: 40%;
     font-size: 50px;
 }
 
