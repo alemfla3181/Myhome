@@ -220,7 +220,7 @@ li {
     font-size: 50px;
     text-align: center;
     backface-visibility: hidden;
-    transition: all 1.2s;
+    transition: all 1s;
 }
 
 .front {
