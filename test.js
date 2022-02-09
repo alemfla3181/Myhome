@@ -36,7 +36,7 @@ function fullPage() {
             }
 
             if (thisPage == 1) {
-                $('.full2 .letter').css({ left: 50 + "px"});
+                $('.full2 .letter').css({ left: 10 + "px"});
             }
             else {
                 $('.full2 .letter').css({ left: 160 + "px"});
@@ -60,7 +60,7 @@ function fullPage() {
             }
 
             if (backPage == 2) {
-                $('.full2 .letter').css({ left: 50 + "px"});
+                $('.full2 .letter').css({ left: 10 + "px"});
             }
             else {
                 $('.full2 .letter').css({ left: -160 + "px"});

@@ -105,24 +105,26 @@ body {
 .full2 span {
     position: absolute;
     display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 50px;
 }
 
 .full2 .box{
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
+    width: 80px;
+    height: 90px;
+    /* background-color: aqua; */
     display: inline-block;
     overflow: hidden;
 }
 
 .full2 .letter{
-    font-family: fantasy;
-    font-size: 50px;
+    font-size: 120px;
     line-height: 100px;
     position: relative;
     left: -160px;
-    transition: all 0.8s linear;
+    transition: all 0.5s linear;
 }
 
 .full3 {
