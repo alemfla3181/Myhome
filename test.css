@@ -105,9 +105,27 @@ body {
 .full2 span {
     position: absolute;
     display: block;
-    top: 25%;
-    left: 10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 50px;
+}
+
+.full2 .box{
+    width: 100px;
+    height: 150px;
+    background-color: aqua;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.full2 .letter{
+    font-family: fantasy;
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    left: -160px;
+    transition: all .25s linear;
 }
 
 .full3 {
