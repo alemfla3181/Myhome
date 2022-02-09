@@ -203,7 +203,7 @@ li {
     height: 500px;
     position: relative;
     transform-style: preserve-3d;
-    perspective: 2000;
+    perspective: 2000px;
     cursor: pointer;
 }
 
@@ -219,8 +219,9 @@ li {
     line-height: 300px;
     font-size: 50px;
     text-align: center;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .front {
@@ -241,7 +242,7 @@ li {
 #imgWrap:hover>.front {
     z-index: 1;
     opacity: 0;
-    transform: rotateY(180deg);
+    transform: rotateY(-180deg);
 }
 
 #imgWrap:hover>.back {
