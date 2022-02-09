@@ -19,15 +19,15 @@ function fullPage() {
 
         // 아래로 휠
         if (event.originalEvent.deltaY > 0) {
-            const nextPage = parseInt(page.index() + 1);
+            const thisPage = parseInt(page.index() + 1);
             const lastPage = parseInt($(".quick ul li").size());
-
-            if (page.index() <= $(".quick ul li").size() - 1) {
+            
+            if (page.index() <= $(".quick ul li").size()) {
                 page.next().addClass("on").siblings(".on").removeClass("on");
             }
-            if (nextPage < lastPage) {
+            if (thisPage < lastPage) {
                 let pageLength = 0;
-                for (let i = 1; i < nextPage + 1; i++) {
+                for (let i = 0; i < thisPage+1; i++) {
                     pageLength += $(".full" + i).height();
                 }
                 $("#page").animate({
@@ -35,24 +35,40 @@ function fullPage() {
                 }, 500, "swing");
             }
 
-        // 위로 휠
+            if (thisPage == 1) {
+                $('.full2 .letter').css({ left: 50 + "px"});
+            }
+            else {
+                $('.full2 .letter').css({ left: 160 + "px"});
+            }
+            // 위로 휠
         } else {
             const backPage = page.index();
+            console.log(backPage);
+
             if (page.index() >= 0) page.prev().addClass("on").siblings(".on").removeClass("on");
             let pageLength = 0;
-            for (let i = 1; i < backPage; i++) {
+            for (let i = 0; i < backPage; i++) {
                 pageLength += $(".full" + i).height();
             }
 
             if (page.index() > 0) {
-                page = page.index() - 1;
+                // page = page.index() - 1;
                 $("#page").animate({
                     top: -pageLength + "px"
                 }, 500, "swing");
             }
+
+            if (backPage == 2) {
+                $('.full2 .letter').css({ left: 50 + "px"});
+            }
+            else {
+                $('.full2 .letter').css({ left: -160 + "px"});
+            }
         }
+
     });
-    
+
     $(window).resize(function () {
         const resizeIndex = $(".quick ul li.on").index() + 1;
 
