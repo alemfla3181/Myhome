@@ -65,7 +65,7 @@ body {
 }
 
 .full1 .line:first-child {
-    animation: slideAnim 12s infinite;
+    animation: slideAnim 10s infinite;
 }
 
 @keyframes slideAnim {
