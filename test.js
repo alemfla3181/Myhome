@@ -52,6 +52,7 @@ function fullPage() {
             }
         }
     });
+    
     $(window).resize(function () {
         const resizeIndex = $(".quick ul li.on").index() + 1;
 
