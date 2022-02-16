@@ -199,9 +199,9 @@ li {
 }
 
 #imgWrap {
+    position: relative;
     width: 50%;
     height: 500px;
-    position: relative;
     transform-style: preserve-3d;
     perspective: 2000px;
     cursor: pointer;
