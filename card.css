@@ -22,6 +22,7 @@ body {
     transform-style: preserve-3d;
     transition: 1s;
     transform: rotateY(0deg);
+    backface-visibility: hidden;
   }
   .card-side {
     color: #fff;
@@ -36,7 +37,6 @@ body {
   .card-side-front {
     background-color: hotpink;
     z-index: 1;
-    backface-visibility: hidden;
   }
   .card-side-back {
     background-color: #0066ff;
