@@ -170,7 +170,7 @@ img:hover {
 }
 
 
-.card-container {
+#card {
     position: relative;
     cursor: pointer;
     height: 500px;
@@ -273,9 +273,7 @@ li {
         font-size: 40px;
     }
 
-    #imgWrap {
-        top: 100px;
-        left: -10%;
+    #card {
         width: 60%;
         height: 350px;
     }
