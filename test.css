@@ -29,7 +29,6 @@ body {
     color: #f1f1f1;
 }
 
-
 #page {
     position: relative;
     height: 100%;
@@ -198,6 +197,44 @@ li {
     background: #fff;
 }
 
+
+
+/* 모바일 */
+@media (max-width: 767px) {
+
+    .navigator {
+        padding: 3rem;
+    }
+
+    .full1 span {
+        font-size: 36px;
+    }
+
+    .full2 span {
+        font-size: 40px;
+    }
+
+    .full3 span {
+        font-size: 40px;
+    }
+
+    img {
+        margin: 20px;
+    }
+
+    .full4 span {
+        font-size: 40px;
+    }
+
+    #imgWrap {
+        top: 100px;
+        left: -10%;
+        width: 60%;
+        height: 350px;
+    }
+}
+
+/*
 #imgWrap {
     position: relative;
     width: 50%;
@@ -250,38 +287,4 @@ li {
     opacity: 1;
     transform: rotateY(0);
 }
-
-/* 모바일 */
-@media (max-width: 767px) {
-
-    .navigator {
-        padding: 3rem;
-    }
-
-    .full1 span {
-        font-size: 36px;
-    }
-
-    .full2 span {
-        font-size: 40px;
-    }
-
-    .full3 span {
-        font-size: 40px;
-    }
-
-    img {
-        margin: 20px;
-    }
-
-    .full4 span {
-        font-size: 40px;
-    }
-
-    #imgWrap {
-        top: 100px;
-        left: -10%;
-        width: 60%;
-        height: 350px;
-    }
-}
+*/
