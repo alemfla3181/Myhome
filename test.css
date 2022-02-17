@@ -106,11 +106,11 @@ body {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 50px;
 }
 
-.full2 .box{
+.full2 .box {
     width: 80px;
     height: 90px;
     /* background-color: aqua; */
@@ -118,7 +118,7 @@ body {
     overflow: hidden;
 }
 
-.full2 .letter{
+.full2 .letter {
     font-size: 120px;
     line-height: 100px;
     position: relative;
@@ -167,6 +167,53 @@ img:hover {
 
 .full5 {
     background: rgb(104, 101, 100);
+}
+
+
+.card-container {
+    position: relative;
+    cursor: pointer;
+    height: 500px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    perspective: 2000px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+    text-align: center;
+    font-size: 50px;
+    line-height: 150px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.front{
+    background: rgb(188, 188, 248);
+}
+
+.back {
+    background: #eaeaed;
+    color: #0087cc;
+    transform: rotateY(180deg);
 }
 
 .quick ul,
