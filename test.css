@@ -17,9 +17,10 @@ body {
 }
 
 .navigator {
+    display: flexbox;
+    width: 100%;
     position: fixed;
     top: 0;
-    padding: 5rem;
     z-index: 2;
 }
 
@@ -27,6 +28,10 @@ body {
     font-size: 30px;
     margin: 0;
     color: #f1f1f1;
+}
+
+.rightMenu{
+    float: right;
 }
 
 #page {
@@ -243,8 +248,6 @@ li {
 .quick .on {
     background: #fff;
 }
-
-
 
 /* 모바일 */
 @media (max-width: 767px) {
