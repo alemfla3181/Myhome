@@ -17,21 +17,23 @@ body {
 }
 
 .navigator {
-    display: flexbox;
-    width: 100%;
     position: fixed;
+    width: 100%;
     top: 0;
     z-index: 2;
+    margin-top: 40px;
 }
 
 .site {
+    display: inline;
     font-size: 30px;
-    margin: 0;
+    margin-left: 50px;
     color: #f1f1f1;
 }
 
 .rightMenu{
     float: right;
+    margin-right: 50px;
 }
 
 #page {
