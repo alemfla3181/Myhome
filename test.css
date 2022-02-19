@@ -255,7 +255,7 @@ li {
 @media (max-width: 767px) {
 
     .navigator {
-        padding: 3rem;
+        margin-top: 50px;
     }
 
     .full1 span {
