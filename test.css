@@ -16,12 +16,17 @@ body {
     font-size: 14px;
 }
 
-.navigator {
+#navigator {
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 2;
     margin-top: 40px;
+}
+
+#navigator.down{
+    background-color: #000000 !important;
+    transition: background-color 0.5s linear;
 }
 
 .site {
@@ -254,7 +259,7 @@ li {
 /* 모바일 */
 @media (max-width: 767px) {
 
-    .navigator {
+    #navigator {
         margin-top: 50px;
     }
 

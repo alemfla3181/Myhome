@@ -44,7 +44,6 @@ function fullPage() {
             // 위로 휠
         } else {
             const backPage = page.index();
-            console.log(backPage);
 
             if (page.index() >= 0) page.prev().addClass("on").siblings(".on").removeClass("on");
             let pageLength = 0;
