@@ -204,7 +204,7 @@ img:hover {
     line-height: 150px;
 }
 
-.card:hover {
+#cardBox:hover .card{
     transform: rotateY(180deg);
 }
 
@@ -283,7 +283,7 @@ li {
         font-size: 40px;
     }
 
-    #card {
+    #cardBox {
         width: 60%;
         height: 350px;
     }
