@@ -182,7 +182,7 @@ img:hover {
 }
 
 
-#card {
+#cardBox {
     position: relative;
     cursor: pointer;
     height: 500px;
