@@ -21,13 +21,13 @@ function fullPage() {
         if (event.originalEvent.deltaY > 0) {
             const thisPage = parseInt(page.index() + 1);
             const lastPage = parseInt($(".quick ul li").size());
-            
+
             if (page.index() <= $(".quick ul li").size()) {
                 page.next().addClass("on").siblings(".on").removeClass("on");
             }
             if (thisPage < lastPage) {
                 let pageLength = 0;
-                for (let i = 0; i < thisPage+1; i++) {
+                for (let i = 0; i < thisPage + 1; i++) {
                     pageLength += $(".full" + i).height();
                 }
                 $("#page").animate({
@@ -36,10 +36,13 @@ function fullPage() {
             }
 
             if (thisPage == 1) {
-                $('.full2 .letter').css({ left: 10 + "px"});
-            }
-            else {
-                $('.full2 .letter').css({ left: 160 + "px"});
+                $('.full2 .letter').css({
+                    left: 10 + "px"
+                });
+            } else {
+                $('.full2 .letter').css({
+                    left: 160 + "px"
+                });
             }
             // 위로 휠
         } else {
@@ -59,10 +62,13 @@ function fullPage() {
             }
 
             if (backPage == 2) {
-                $('.full2 .letter').css({ left: 10 + "px"});
-            }
-            else {
-                $('.full2 .letter').css({ left: -160 + "px"});
+                $('.full2 .letter').css({
+                    left: 10 + "px"
+                });
+            } else {
+                $('.full2 .letter').css({
+                    left: -160 + "px"
+                });
             }
         }
 
@@ -85,12 +91,23 @@ function fullPage() {
 function Click() {
     $(".quick li").click(function () {
         const index = $(this).index() + 1;
+
         let length = 0;
         for (let i = 1; i < index; i++) {
             length += $(".full" + i).height();
         }
         if ($("body").find("#page:animated").length >= 1) return false;
         $(this).addClass("on").siblings("li").removeClass("on");
+
+        if (index == 2) {
+            $('.full2 .letter').css({
+                left: 10 + "px"
+            });
+        } else {
+            $('.full2 .letter').css({
+                left: -160 + "px"
+            });
+        }
 
         $("#page").animate({
             top: -length + "px"
