@@ -89,6 +89,21 @@ function fullPage() {
 }
 
 function Click() {
+    $("#navigator span").click(function () {
+
+        $(".quick ul li:nth-child(" + this.id + ")").addClass("on").siblings(".on").removeClass("on");
+        
+        $('.full2 .letter').css({
+            left: 10 + "px"
+        });
+
+        $('#page').animate({
+            top: +772 -772*this.id + "px"
+        }, 500, "swing");
+        return false;
+    })
+
+
     $(".quick li").click(function () {
         const index = $(this).index() + 1;
 
@@ -96,6 +111,7 @@ function Click() {
         for (let i = 1; i < index; i++) {
             length += $(".full" + i).height();
         }
+        console.log(length);
         if ($("body").find("#page:animated").length >= 1) return false;
         $(this).addClass("on").siblings("li").removeClass("on");
 
@@ -114,4 +130,5 @@ function Click() {
         }, 500, "swing");
         return false;
     });
+
 }
