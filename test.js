@@ -121,7 +121,7 @@ function Click() {
             });
         } else {
             $('.full2 .letter').css({
-                left: -160 + "px"
+                left: -400 + "px"
             });
         }
 

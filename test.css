@@ -79,6 +79,19 @@ body {
 
 .full1 {
     background: rgba(197, 210, 247, 0.521);
+    ;
+}
+
+.full1::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    opacity: 0.1;
 }
 
 .full1 span {
@@ -137,6 +150,18 @@ body {
 
 .full2 {
     background: rgb(145, 255, 246);
+}
+
+.full2::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    opacity: 0.3;
 }
 
 .full2 span {
@@ -210,6 +235,18 @@ body {
     background: rgb(196, 247, 196);
 }
 
+.full3::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    opacity: 0.5;
+}
+
 .full3 span {
     position: absolute;
     display: block;
@@ -218,16 +255,17 @@ body {
     font-size: 50px;
 }
 
-img {
+.full3 img {
     position: relative;
     display: flexbox;
     top: 25%;
     left: 15%;
     width: 30%;
     margin: 30px;
+    z-index: 1;
 }
 
-img:hover {
+.full3 img:hover {
     box-shadow: 0px 0px 30px #000000;
     transform: scale(1.2);
     transition: 0.2s;
@@ -238,6 +276,18 @@ img:hover {
     justify-content: center;
     align-items: center;
     background: rgb(173, 204, 233);
+}
+
+.full4::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    opacity: 0.3;
 }
 
 .full4 span {
@@ -275,6 +325,17 @@ img:hover {
     background: rgb(104, 101, 100);
 }
 
+.full5::after{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    opacity: 0.1;
+}
 
 #cardBox {
     position: relative;
@@ -285,6 +346,7 @@ img:hover {
     left: 50%;
     transform: translate(-50%,-50%);
     perspective: 2000px;
+    z-index: 1;
 }
 
 .card {
@@ -375,7 +437,7 @@ li {
         font-size: 40px;
     }
 
-    img {
+    .full3 img {
         margin: 20px;
     }
 
