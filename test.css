@@ -356,7 +356,7 @@ body {
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     line-height: 150px;
 }
 
@@ -376,10 +376,10 @@ body {
 
 .front{
     background: rgb(188, 188, 248);
-    
 }
 
 .back {
+    font-size: 60px;
     background: #eaeaed;
     color: #0087cc;
     transform: rotateY(180deg);
