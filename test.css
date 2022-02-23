@@ -136,7 +136,7 @@ body {
 }
 
 .full2 {
-    background: rgb(214, 165, 247);
+    background: rgb(145, 255, 246);
 }
 
 .full2 span {
@@ -144,24 +144,51 @@ body {
     display: block;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 50px;
+    transform: translate(-30%, -50%);
+    line-height: 100px;
+    font-size: 70px;
+    color: rgba(66, 69, 85, 0.808);
 }
 
 .full2 .box {
-    width: 80px;
-    height: 90px;
+    width: 400px;
+    height: 70px;
     /* background-color: aqua; */
     display: inline-block;
     overflow: hidden;
 }
 
+.full2 .b1{
+    transform: translateX(-20%);
+}
+
+.full2 .b2{
+    transform: translateX(-40%);
+}
+
+.full2 .b4{
+    transform: translateX(20%);
+}
+
 .full2 .letter {
-    font-size: 120px;
-    line-height: 100px;
     position: relative;
-    left: -160px;
+    left: -400px;
+    transition: all 0.7s linear;
+}
+
+.full2 .l1{
+    left: -100px;
     transition: all 0.5s linear;
+}
+
+.full2 .l2{
+    left: -200px;
+    transition: all 0.8s linear;
+}
+
+.full2 .l3{
+    left: -500px;
+    transition: all 1s linear;
 }
 
 .full3 {
@@ -299,7 +326,8 @@ li {
     }
 
     .full2 span {
-        font-size: 40px;
+        font-size: 50px;
+        transform: translate(-20%, -50%);
     }
 
     .full3 span {

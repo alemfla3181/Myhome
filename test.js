@@ -41,7 +41,7 @@ function fullPage() {
                 });
             } else {
                 $('.full2 .letter').css({
-                    left: 160 + "px"
+                    left: 400 + "px"
                 });
             }
             // 위로 휠
@@ -67,7 +67,7 @@ function fullPage() {
                 });
             } else {
                 $('.full2 .letter').css({
-                    left: -160 + "px"
+                    left: -400 + "px"
                 });
             }
         }
