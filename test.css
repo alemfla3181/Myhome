@@ -219,15 +219,41 @@ img:hover {
 }
 
 .full4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(173, 204, 233);
 }
 
 .full4 span {
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.full4 h2{
     position: absolute;
-    display: block;
-    top: 20%;
-    left: 10%;
-    font-size: 50px;
+    transform: translate(0%,-50%);
+    font-size: 20em;
+}
+
+.full4 h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.full4 h2:nth-child(2){
+    color: #03a9f4;
+    animation: animateWater 5s ease-in-out infinite;
+}
+
+@keyframes animateWater{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
 }
 
 .full5 {
