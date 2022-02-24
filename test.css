@@ -209,7 +209,8 @@ body {
     position: relative;
     display: inline-flex;
     animation: wavy 2s infinite;
-    animation-delay: calc(.3s * var(--i));
+    /* animation-delay: calc(.3s * var(--i));
+    animation-play-state: paused; */
 }
 
 @keyframes wavy{
