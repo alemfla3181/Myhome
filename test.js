@@ -39,6 +39,19 @@ function fullPage() {
                 $('.full2 .letter').css({
                     left: 10 + "px"
                 });
+                setTimeout(function () {
+                    $('.full2 .box1').css({ animation: "wavy 1s infinite" })
+                }, 100);
+                setTimeout(function () {
+                    $('.full2 .box2').css({ animation: "wavy 1s infinite" })
+                }, 200);
+                setTimeout(function () {
+                    $('.full2 .box3').css({ animation: "wavy 1s infinite" })
+                }, 300);
+                setTimeout(function () {
+                    $('.full2 .box4').css({ animation: "wavy 1s infinite" })
+                }, 400);
+                
             } else {
                 $('.full2 .letter').css({
                     left: 400 + "px"

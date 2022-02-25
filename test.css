@@ -182,15 +182,15 @@ body {
     overflow: hidden;
 }
 
-.full2 .b1{
+.full2 .line1{
     transform: translateX(-20%);
 }
 
-.full2 .b2{
+.full2 .line2{
     transform: translateX(-40%);
 }
 
-.full2 .b4{
+.full2 .line4{
     transform: translateX(20%);
 }
 
@@ -208,9 +208,7 @@ body {
 .full2 .l1 div{
     position: relative;
     display: inline-flex;
-    animation: wavy 2s infinite;
-    /* animation-delay: calc(.3s * var(--i));
-    animation-play-state: paused; */
+    /* animation: wavy 2s infinite; */
 }
 
 @keyframes wavy{
@@ -348,6 +346,9 @@ body {
     transform: translate(-50%,-50%);
     perspective: 2000px;
     z-index: 1;
+    font-size: 100px;
+    line-height: 150px;
+    text-align: center;
 }
 
 .card {
@@ -356,9 +357,6 @@ body {
     position: absolute;
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
-    text-align: center;
-    font-size: 100px;
-    line-height: 150px;
 }
 
 #cardBox:hover .card{
@@ -449,5 +447,11 @@ li {
     #cardBox {
         width: 60%;
         height: 350px;
+        font-size: 60px;
+        line-height: 100px;
+    }
+
+    .back{
+        font-size: 40px;
     }
 }
