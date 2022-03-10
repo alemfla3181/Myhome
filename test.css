@@ -105,6 +105,7 @@ body {
     padding: 0 20px;
     height: 100px;
     overflow: hidden;
+    z-index: 1;
 }
 
 .full1 .line {
@@ -264,9 +265,9 @@ body {
     display: inline-block;
     top: 50%;
     left: 50%;
-    transform: translate(-130%,-170%);
-    width: 30%;
-    height: 20%;
+    transform: translate(-130%,-140%);
+    width: 25%;
+    height: 25%;
     margin: 50px;
     z-index: 1;
     text-align: center;
@@ -367,7 +368,7 @@ body {
     transform: translate(-50%, -50%);
     perspective: 2000px;
     z-index: 1;
-    font-size: 100px;
+    font-size: 80px;
     line-height: 150px;
     text-align: center;
 }
@@ -396,6 +397,7 @@ body {
 
 .front {
     background: rgb(188, 188, 248);
+    text-transform: uppercase;
 }
 
 .back {
