@@ -24,7 +24,7 @@ body {
     margin-top: 40px;
 }
 
-#navigator.down{
+#navigator.down {
     background-color: #000000 !important;
     transition: background-color 0.5s linear;
 }
@@ -37,12 +37,12 @@ body {
     cursor: pointer;
 }
 
-.rightMenu{
+.rightMenu {
     float: right;
     margin-right: 50px;
 }
 
-.rightMenu span{
+.rightMenu span {
     display: inline-block;
     position: relative;
     margin-right: 10px;
@@ -52,7 +52,7 @@ body {
     cursor: pointer;
 }
 
-.rightMenu span::after{
+.rightMenu span::after {
     display: block;
     content: '';
     width: 100%;
@@ -63,7 +63,7 @@ body {
     background-color: rgb(187, 143, 236);
 }
 
-.rightMenu span:hover::after{
+.rightMenu span:hover::after {
     transform: translateY(-70%) scaleX(1);
 }
 
@@ -82,8 +82,8 @@ body {
     ;
 }
 
-.full1::after{
-    position:absolute;
+.full1::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -152,8 +152,8 @@ body {
     background: rgb(145, 255, 246);
 }
 
-.full2::after{
-    position:absolute;
+.full2::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -182,15 +182,15 @@ body {
     overflow: hidden;
 }
 
-.full2 .line1{
+.full2 .line1 {
     transform: translateX(-20%);
 }
 
-.full2 .line2{
+.full2 .line2 {
     transform: translateX(-40%);
 }
 
-.full2 .line4{
+.full2 .line4 {
     transform: translateX(20%);
 }
 
@@ -200,32 +200,36 @@ body {
     transition: all 0.7s linear;
 }
 
-.full2 .li{
+.full2 .li {
     left: -100px;
     transition: all 0.5s linear;
 }
 
-.full2 .l1 div{
+.full2 .l1 div {
     position: relative;
     display: inline-flex;
     /* animation: wavy 2s infinite; */
 }
 
-@keyframes wavy{
-    0%,40%,100%{
+@keyframes wavy {
+
+    0%,
+    40%,
+    100% {
         transform: translateY(0);
     }
-    20%{
+
+    20% {
         transform: translateY(-20%);
     }
 }
 
-.full2 .l2{
+.full2 .l2 {
     left: -200px;
     transition: all 0.8s linear;
 }
 
-.full2 .l3{
+.full2 .l3 {
     left: -500px;
     transition: all 1s linear;
 }
@@ -234,8 +238,8 @@ body {
     background: rgb(196, 247, 196);
 }
 
-.full3::after{
-    position:absolute;
+.full3::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -249,19 +253,32 @@ body {
 .full3 span {
     position: absolute;
     display: block;
-    top: 20%;
-    left: 40%;
-    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -450%);
+    font-size: 70px;
+}
+
+.full3 .pf_img {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-130%,-170%);
+    width: 30%;
+    height: 20%;
+    margin: 50px;
+    z-index: 1;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 20px;
 }
 
 .full3 img {
     position: relative;
-    display: flexbox;
-    top: 25%;
-    left: 15%;
-    width: 30%;
-    height: 25%;
-    margin: 30px;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 }
 
@@ -278,8 +295,8 @@ body {
     background: rgb(173, 204, 233);
 }
 
-.full4::after{
-    position:absolute;
+.full4::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -296,27 +313,30 @@ body {
     box-sizing: border-box;
 }
 
-.full4 h2{
+.full4 h2 {
     position: absolute;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     font-size: 10em;
 }
 
-.full4 h2:nth-child(1){
+.full4 h2:nth-child(1) {
     color: transparent;
     -webkit-text-stroke: 2px #03a9f4;
 }
 
-.full4 h2:nth-child(2){
+.full4 h2:nth-child(2) {
     color: #03a9f4;
     animation: animateWater 5s ease-in-out infinite;
 }
 
-@keyframes animateWater{
-    0%,100%{
+@keyframes animateWater {
+
+    0%,
+    100% {
         clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
     }
-    50%{
+
+    50% {
         clip-path: polygon(0 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
     }
 }
@@ -325,8 +345,8 @@ body {
     background: rgb(104, 101, 100);
 }
 
-.full5::after{
-    position:absolute;
+.full5::after {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -344,7 +364,7 @@ body {
     width: 50%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     perspective: 2000px;
     z-index: 1;
     font-size: 100px;
@@ -360,7 +380,7 @@ body {
     transform-style: preserve-3d;
 }
 
-#cardBox:hover .card{
+#cardBox:hover .card {
     transform: rotateY(180deg);
 }
 
@@ -374,7 +394,7 @@ body {
     -webkit-backface-visibility: hidden;
 }
 
-.front{
+.front {
     background: rgb(188, 188, 248);
 }
 
@@ -420,7 +440,7 @@ li {
         margin-top: 50px;
     }
 
-    .rightMenu{
+    .rightMenu {
         display: none;
     }
 
@@ -434,7 +454,17 @@ li {
     }
 
     .full3 span {
+        top: 40%;
         font-size: 40px;
+    }
+
+    .full3 .pf_img {
+        transform: translate(-130%,-150%);
+        width: 40%;
+        height: 20%;
+        margin: 15px;
+        line-height: 20px;
+        font-size: 20px;
     }
 
     .full3 img {
@@ -452,7 +482,7 @@ li {
         line-height: 100px;
     }
 
-    .back{
+    .back {
         font-size: 40px;
     }
 }
