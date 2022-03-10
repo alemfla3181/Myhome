@@ -259,12 +259,13 @@ body {
 .full3 .pf_img {
     position: relative;
     display: inline-block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-130%,-140%);
-    width: 25%;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+    width: 35%;
     height: 25%;
-    margin: 50px;
+    margin: 3%;
+    padding: 0;
     z-index: 1;
     text-align: center;
     justify-content: center;
@@ -446,15 +447,14 @@ li {
     }
 
     .full3 span {
-        top: 40%;
+        top: 15%;
         font-size: 40px;
     }
 
     .full3 .pf_img {
-        transform: translate(-130%,-150%);
         width: 40%;
         height: 20%;
-        margin: 15px;
+        margin: 3%;
         line-height: 20px;
         font-size: 20px;
     }
