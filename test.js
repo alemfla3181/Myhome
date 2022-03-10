@@ -111,7 +111,7 @@ function Click() {
         });
 
         $('#page').animate({
-            top: +772 -772*this.id + "px"
+            top: +100 - 100 * this.id + "%"
         }, 500, "swing");
         return false;
     })
